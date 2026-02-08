@@ -1,0 +1,138 @@
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+main {
+    flex: 3;
+}
+
+aside {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    position: sticky;
+    top: 80px;
+    height: fit-content;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+    border-radius: 5px;
+}
+
+section h2 {
+    color: #006064;
+    border-bottom: 2px solid #00838f;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+section h3 {
+    color: #00838f;
+    margin: 15px 0 10px 0;
+}
+
+
+ .stud{
+    text-align: center;;
+ }
+
+.stud h2 {
+    text-align: center;
+    line-height: 1.2;
+}
+
+.ref li {
+    list-style: none;
+    padding-bottom: 9px;
+    margin-left: 20px;
+    text-indent: -20px;
+}
+
+/* Sidebar navigation */
+.top-level-ul {
+    flex-direction: column;
+    gap: 10px;
+}
+
+aside ul {
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 20px;
+}
+
+aside a {
+    color: #006064;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+aside a:hover {
+    color: #00838f;
+    text-decoration: underline;
+}
+
+aside h3 {
+    color: #006064;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #00838f;
+    padding-bottom: 5px;
+}
+
+
+.top {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    z-index: 99;
+}
+        
+.top a {
+    padding: 10px 20px;
+    background-color: #006064;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.top a:hover {
+    background-color: #00838f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+    
+    aside {
+        position: static;
+        margin-bottom: 20px;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
