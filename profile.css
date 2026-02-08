@@ -1,0 +1,347 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #0b0617;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Profile Header Styles */
+.profile-header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: #46a1d2;
+    color: rgb(15, 69, 93);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid hwb(190 6% 65%);
+}
+
+.user-info {
+    padding: 10px;
+}
+
+.user-info h1 {
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+}
+
+.user-info h2 {
+    font-size: 1.3rem;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.basic-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.95rem;
+}
+
+.basic-info p {
+    margin-bottom: 8px;
+}
+
+.basic-info span {
+    font-weight: bold;
+}
+
+/* Content Layout */
+.profile-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.profile-card {
+    background-color: rgb(109, 178, 224);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.profile-card h3 {
+    color: #1450a3;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #212424;
+}
+
+/* Skills Section */
+.skill {
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: #0077b6;
+    border-radius: 5px;
+}
+
+/* Goals Section - List Styling */
+.goals-section ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+}
+
+.goals-section li {
+    display: flex; /* Align icon and text in a row */
+    align-items: left; /* Vertically center the icon and text */
+    margin-bottom: 10px; /* Add spacing between items */
+}
+
+.goals-section li img {
+    width: 24px; /* Adjust icon size */
+    height: 24px;
+    margin-right: 10px; /* Space between icon and text */
+}
+
+/* Frustrations */
+.frustrations-section ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.frustrations-section li {
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+.frustrations-section li:before {
+    content: "➤";
+    position: absolute;
+    left: -15px;
+    color: #00314b;
+}
+
+/* Experience Section */
+.experience-item ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.legend {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Color box to show availability color */
+.color-box {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* Styling for the legend text */
+.legend-text {
+    font-size: 16px;
+    color: #333;
+}
+
+
+/* Calendar Styles */
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+.calendar th,
+.calendar td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.calendar th {
+    background-color: #0077b6;
+    color: white;
+}
+
+.calendar .available {
+    background-color: #72efdd;
+    cursor: pointer;
+}
+
+.date-cell {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.available-date {
+    background-color: #72efdd;
+    color: #333;
+    font-weight: bold;
+}
+
+/* UN Goals Section */
+.un-goals-icons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.un-goal {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.un-goal:hover {
+    transform: scale(1.1);
+}
+
+.un-icon {
+    max-width: 45px;
+    max-height: 45px;
+}
+
+/* Contact Form */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    width: 100%;
+}
+
+input,
+textarea {
+    resize:none;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #0077b6;
+    box-shadow: 0 0 3px rgba(0, 119, 182, 0.3);
+}
+
+.send-button {
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    align-self: flex-end;
+}
+
+.send-button:hover {
+    background-color: #00507a;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0077b6;
+    color: white;
+    margin-top: 30px;
+}
+
+footer a {
+    color: #caf0f8;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .profile-header {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .profile-content {
+        grid-template-columns: 1fr;
+    }
+
+    .avatar {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 15px;
+    }
+
+    .basic-info {
+        align-items: center;
+        margin-top: 15px;
+    }
+}
