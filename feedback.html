@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lifeBelowWater_Feedback Form</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" >
+
+    <link rel="stylesheet" href="global.css"> 
+    <link rel="stylesheet" href="feedback.css"> <!-- Additional styles for this page -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> 
+</head>  
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navigation">
+      <!-- Mini Logo on Left -->
+      <div class="nav-logo">
+		<img src="images/Seascape_logo.jpg" alt="Logo">
+      </div>
+
+      <!-- Main Title: Life Below Water in the center -->
+      <div class="nav-title">
+        <span style="color: #006064">Sea</span
+        ><span style="color: #00838f">Scape</span>
+      </div>
+
+      <!-- Navigation Links -->
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="table.html">Table</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="sitemap.html">Site Map</a></li>
+        <li><a href="team.html">Our Team</a></li>
+      </ul>
+      <!-- Profile Icon on the Right -->
+      <div class="profile-icon" onclick="window.location.href='profile.html'">
+        <i class="fas fa-user"></i>
+      </div>
+    </nav>
+
+<!-- Feedback Form -->
+<section class="feedback-container">
+    <h2>We Value Your Feedback</h2>
+    <p>Please fill in the form below to share your thoughts with us.</p>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+        
+        <!-- Personal Details Section -->
+        <fieldset>
+            <legend>Personal Details</legend>
+            
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required maxlength="50" placeholder="John Doe" title="Please enter your full name.">
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required placeholder="example@email.com" 
+                   title="Please enter a valid email address (e.g., user@example.com)">
+
+            <label for="phone">Telephone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required 
+                   title="Please enter a 10-digit phone number (e.g., 0123456789)" placeholder="0123456789">
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="3" placeholder="Enter your address"></textarea>
+
+            <!-- Datalist Input (Newly Added) -->
+            <label for="location">Your City:</label>
+            <input list="cities" id="location" name="location" placeholder="Start typing your city..." required>
+            <datalist id="cities">
+                <option value="New York"></option>
+                <option value="Los Angeles"></option>
+                <option value="Chicago"></option>
+                <option value="Houston"></option>
+                <option value="Miami"></option>
+            </datalist>
+        </fieldset>
+
+        <!-- Feedback Section -->
+        <fieldset>
+            <legend>Feedback Details</legend>
+            
+            <label for="comment">Comment or Message:</label>
+            <textarea id="comment" name="comment" rows="4" maxlength="500" 
+                      placeholder="Your feedback here..." oninput="updateCounter()" required></textarea>
+            <p id="charCounter">500 characters remaining</p>
+
+            <label for="category">Feedback Category:</label>
+            <select id="category" name="category" required>
+                <option value="">-- Select a Category --</option>
+                <option value="general">General Inquiry</option>
+                <option value="complaint">Complaint</option>
+                <option value="suggestion">Suggestion</option>
+            </select>
+
+            <label for="topics">Select Interests (Multi-Select):</label>
+            <select id="topics" name="topics[]" multiple required>
+                <option value="design">Website Design</option>
+                <option value="usability">Usability</option>
+                <option value="content">Content Quality</option>
+                <option value="support">Customer Support</option>
+            </select>
+
+            <label>Rate Your Experience:</label>
+            <div class="rating">
+                <span>😡</span><span>😞</span><span>😐</span><span>😊</span><span>😍</span>
+            </div>
+
+            <label for="date">Date of Visit:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="datetime">Schedule a Follow-up:</label>
+            <input type="datetime-local" id="datetime" name="datetime">
+
+            <label for="file">Upload a Screenshot (Optional):</label>
+            <input type="file" id="file" name="file" accept="image/*, .pdf">
+        </fieldset>
+
+        <button type="submit">Submit Feedback</button>
+    </form>
+</section>
+
+
+<p class="top"><a href="#top">Go top</a></p>
+
+<!-- Footer -->
+<footer class="wave-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <img src="images/seascape_logo.jpg" alt="Logo" class="logo">
+                <p>Follow Us On</p>
+                <div class="social-icons">
+                    <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+                    <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+                </div>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Editors</h3>
+                <p>Nimsara Aluthgedara</p>
+                <p>Dulaj Subapanditha</p>
+                <p>Upuli Kuruppu</p>
+                <p>Heruni Perera</p>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Team</h3>
+                <p><a href="volunteer.html">Volunteer</a></p>
+                <p><a href="sitemap.html">Sitemap</a></p>
+                <p><a href="content_ST3.html">Content</a></p>
+                <p><a href="feedback.html">Feedback</a></p>
+                <p><a href="team.html">Team</a></p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>No:134/5 Temple road, Colombo, Sri Lanka</p>
+                <p>Phone: +94 112 595 5982</p>
+                <p>Email: Seascape@gmail.com</p>
+            </div>
+    
+        </div>
+    
+        <hr style="border: 1px solid #1921ae; margin: 10px ;">
+
+        <div class="footer-bottom">
+            <p>Copyright ©2025; Designed by <b>SeaScape</b></p>
+            <div>
+                <a href="pageEditor_ST3.html" target="_self">Page Editor</a>
+                <a href="validation_ST3.html" target="_self">Validation Page</a>
+                <a href="feedback.html" target="_self">Feedback Page</a>
+            </div>
+
+            <p>Designed by Team G5(F)</p>
+        </div>
+
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+        <div class="wave wave4"></div>
+    </footer>
+
+<!-- JavaScript for Character Counter -->
+<script>
+    function updateCounter() {
+        let comment = document.getElementById("comment");
+        let counter = document.getElementById("charCounter");
+        let remaining = 500 - comment.value.length;
+        counter.textContent = `${remaining} characters remaining`;
+    }
+</script>
+
+</body>
+</html>
+

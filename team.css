@@ -1,0 +1,148 @@
+/* ======= Team Page Background ======= */
+body {
+    background: url('images/team-back2.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* ======= Team Section Styling ======= */
+.team-container {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.team-container h2 {
+    color: #00838f;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.team-container p {
+    color: white;
+}
+
+/* ======= Team Grid Layout ======= */
+.team-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* ======= Team Member Card (Initially Only Image & Role Visible) ======= */
+.team-member {
+    position: relative;
+    width: 250px;
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.2); /* Light transparency for better visibility */
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(226, 223, 223, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Hover Effect */
+.team-member:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.4); /* Increases visibility on hover */
+}
+
+/* ======= Team Member Photo Styling ======= */
+.team-photo {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10%;
+    margin: 10px auto;
+    transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Image Hover Effect */
+.team-member:hover .team-photo {
+    filter: brightness(0.9);
+    transform: scale(1.05);
+}
+
+/* ======= Team Member Info (Only Show Name & Role Initially) ======= */
+.member-info {
+    padding: 10px;
+    text-align: center;
+}
+
+.member-info h3 {
+    color: #00838f;
+    margin-bottom: 5px;
+}
+
+.member-info p {
+    font-size: 14px;
+    color: white;
+}
+
+/* ======= Expand Button Styling ======= */
+.expand-btn {
+    background: #00838f;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.expand-btn:hover {
+    background: #006064;
+}
+
+/* ======= Expandable Details (Initially Hidden) ======= */
+.extra-info {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+/* When active, expand the section */
+.team-member.active .extra-info {
+    max-height: 200px;
+    opacity: 1;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Keyboard Accessibility */
+.team-member:focus {
+    outline: 2px solid #00838f;
+}
+/* Go to top button styling */
+.top {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    z-index: 99;
+}
+        
+.top a {
+    padding: 10px 20px;
+    background-color: #006064;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.top a:hover {
+    background-color: #00838f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+
