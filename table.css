@@ -1,0 +1,117 @@
+body {
+    background-color: #e6f3f9;
+    font-family:  sans-serif;
+}
+
+.table-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 105, 140, 0.1);
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    filter: drop-shadow(3px 3px 6px rgba(0,0,0,0.1));
+    border-radius: 50%;
+}
+
+table {
+    width: 100%;
+    border-spacing: 2;
+    background-color: white;
+    border-radius: 13px;
+    box-shadow: 0 6px 12px rgba(0, 105, 140, 0.1);
+}
+
+th {
+    background-color: #4aa8c4;
+    color: #fff4e6;
+    padding: 15px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 650;
+}
+
+td {
+    padding: 2px;
+    border-bottom: 1px solid #e6f3f9;
+    vertical-align: middle;
+}
+td a{
+    color: #4aa8c4;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+table p{
+    font-weight: bold;
+    color:darkturquoise;
+    margin-top: 10px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f0f8ff;
+}
+
+
+tr:hover {
+    background-color: #e6f3ff;
+    transition: background-color 0.4s ease;
+}
+
+.species-img {
+    width: 180px;
+    height: 180px;
+    object-fit: fill;
+    border-radius: 15px;
+    margin-right: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+tr:hover .species-img {
+    transform: scale(1.05);
+}
+
+.species-desc {
+    max-width: 350px;
+    line-height: 1.6;
+    color: #2c3e50;
+}
+
+.status-critical {
+    color: #d9534f;
+    font-weight: bold;
+    background-color: #fff0f0;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.status-endangered {
+    color: #f0ad4e;
+    font-weight: bold;
+    background-color: #fff4e6;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+.status-vulnerable {
+    color: #5bc0de;
+    font-weight: bold;
+    background-color: #e6f3ff;
+    padding: 6px;
+    border-radius: 5px;
+    
+}
