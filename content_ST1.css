@@ -1,0 +1,143 @@
+
+        body {
+            color: white;
+            background-image: url(images/pexels-gije-16380640.jpg);
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat; /* Prevents tiling */
+            background-attachment: fixed; /* Keeps the background still while scrolling */
+            color: black; /* Ensures text is readable */
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            text-align: center;
+    
+           
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3); /* Adjust transparency (0.5 = 50% dark) */
+            z-index: -1; /* Ensures it stays behind the content */
+        }
+
+        .header {
+            margin: 0;
+           
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-grow: 1;
+            gap: 20px;
+            padding: 50px 20px;
+            padding-top: 100px;
+            justify-content: center;
+            
+        }
+
+        .card {
+            color: white;
+            backdrop-filter: blur(20px);
+            overflow: hidden;
+            justify-content: center;
+            border-radius: 10px;
+            width: 22%;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(142, 242, 244, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover{
+            transform: scale(1.05);
+            box-shadow: 0px 4px 10px rgba(142, 242, 244, 0.3);
+        }
+
+        
+
+        .card a {
+            color: rgb(62, 194, 183);
+            font-size: 15px;
+            transition: none;
+            text-decoration: underline;
+            
+
+        }
+
+        .card a:hover {
+            text-decoration: underline;
+            color: rgb(37, 122, 95);;
+            
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: white;
+            backdrop-filter: blur(40px);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            width: 100%;
+            margin: 0%;
+            box-shadow: 0px 4px 10px rgba(142, 242, 244, 0.3);
+            margin-top: 20px;  
+        }
+        .card h3 {
+            color: white;
+            transition: none;
+        }
+        .card p {
+            font-size: 14px;
+            transition: none;
+            
+        }
+        .read-more {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .wave-footer {
+            margin-top: auto; /* Pushes footer to the bottom */
+            overflow: hidden; /* Prevents extra space caused by absolute positioning of waves */
+        }
+
+        .go-to-top {
+            position: fixed;
+            bottom: 40px;
+            right: 5px;
+            width: 50px;
+            height: 50px;
+            background-color: #012b46;
+            color: white;
+            text-decoration: none;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            z-index: 100;
+            
+        }
+        
+        .go-to-top:hover {
+            background-color: #0077B6;
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        
+
+    
