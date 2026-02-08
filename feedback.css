@@ -1,0 +1,164 @@
+
+body {
+    background: url('images/feed-back.jpg.jpg') no-repeat center center fixed;
+    background-size: cover;
+
+}
+
+/* Style the feedback form for better readability */
+.feedback-container {
+    background: rgba(255, 255, 255, 0.9); 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 60%;
+    margin: 40px auto;
+}
+
+
+
+.feedback-container {
+    width: 60%;
+    margin: 40px auto;
+    padding: 20px;
+    /* background: white; */
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-container h2 {
+    text-align: center;
+    color: #00838f;
+}
+
+.feedback-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border: 2px solid #00838f;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+/* Go to top button styling */
+.top {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    z-index: 99;
+}
+        
+.top a {
+    padding: 10px 20px;
+    background-color: #006064;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.top a:hover {
+    background-color: #00838f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+legend {
+    font-weight: bold;
+    color: #00838f;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.rating span {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.rating span:hover {
+    color: gold;
+}
+
+button {
+    background-color: #00838f;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #006064;
+}
+
+aside {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    position: sticky;
+    top: 80px;
+    height: fit-content;
+    display: block; 
+}
+
+
+aside ul {
+    list-style-type: disc; 
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+aside ul ul {
+    list-style-type: circle; 
+    margin-left: 0;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+aside li {
+    display: list-item; 
+    margin-bottom: 5px;
+}
+
+.top-level-ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: block;
+    width: 100%;
+}
+
+
+.top-level-ul > li {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+
+aside a:hover {
+    color: #00838f;
+    text-decoration: underline;
+    padding-left: 2px; /* Slight indent on hover */
+    transition: padding-left 0.2s ease;
+}
