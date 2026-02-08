@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+main {
+    margin-top: 120px;
+    margin-left: 35px;
+    margin-right: 35px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    border: 2px solid red;
+    background-image: url("st4_images/sitemap_bg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.map {
+
+    background-image: url(st4_images/sitemap_bg.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 1);
+}
+
+.map a:last-child {
+    height: 0px;
+    /* Shrinks the last connector */
+}
+
+
+.svg {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+
+}
+
+
+h2 {
+    font-size: 80px;
+    margin-top: 70px;
+    color: #fff;
+    font-weight: 705;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    transition: text-shadow 0.3s ease;
+}
+
+h2:hover {
+    text-shadow: 6px 6px 10px rgba(0, 0, 0, 1);
+}
+
+
+a:hover rect {
+    fill: #093013;
+}
+
+a:hover text {
+    fill: white;
+}
