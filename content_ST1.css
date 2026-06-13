@@ -148,4 +148,8 @@
     width: 100% !important;
     margin: 0 !important;
   }
+  .card {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
 }
