@@ -445,3 +445,33 @@ p {
 .publications .image .details .more .read-more span {
   font-weight: 900;
 }
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .logo {
+    width: 200px;
+    height: 200px;
+  }
+  .title {
+    font-size: 24px;
+    padding: 0 5vw;
+  }
+  .description {
+    margin: 10px 5%;
+    font-size: 14px;
+  }
+  .content {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .stats-grid {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  .cta-section h2 {
+    font-size: 24px;
+  }
+}

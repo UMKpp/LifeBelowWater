@@ -272,3 +272,48 @@ footer {
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .navigation {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .nav-logo {
+    margin-bottom: 10px;
+  }
+  .nav-title {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  nav a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .profile-icon {
+    margin: 15px auto 0 auto;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  .footer-bottom div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-bottom a {
+    margin: 5px;
+  }
+}

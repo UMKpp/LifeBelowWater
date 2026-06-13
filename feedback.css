@@ -162,3 +162,11 @@ aside a:hover {
     padding-left: 2px; /* Slight indent on hover */
     transition: padding-left 0.2s ease;
 }
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .feedback-container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+  }
+}

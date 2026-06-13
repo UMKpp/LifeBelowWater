@@ -107,3 +107,17 @@ a:hover rect {
 a:hover text {
     fill: white;
 }
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .map {
+    overflow-x: auto;
+    padding: 20px 10px;
+  }
+  .map h2 {
+    font-size: 40px;
+    margin-top: 30px;
+  }
+  .map svg {
+    min-width: 800px;
+  }
+}

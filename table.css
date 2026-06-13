@@ -115,3 +115,18 @@ tr:hover .species-img {
     border-radius: 5px;
     
 }
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .table-container {
+    overflow-x: auto;
+    padding: 10px;
+  }
+  .species-img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+  }
+  th, td {
+    padding: 10px;
+  }
+}
