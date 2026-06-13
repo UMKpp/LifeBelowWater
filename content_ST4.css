@@ -292,7 +292,7 @@ section:last-child {
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
-  .container, .page-container {
+  .container, .page-container, .flex-container {
     padding: 20px 10px;
     width: 100% !important;
     margin: 0 !important;
@@ -302,5 +302,8 @@ section:last-child {
     flex: none;
     width: 100%;
     margin-bottom: 20px;
+  }
+  .image-container, .text-content {
+    width: 100% !important;
   }
 }
