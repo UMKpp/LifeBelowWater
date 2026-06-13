@@ -7,24 +7,18 @@
     text-decoration: none;
 }
 
-main {
-    margin-top: 120px;
-    margin-left: 35px;
-    margin-right: 35px;
-    display: flex;
-    align-items: center;
-    height: 100%;
-
-    border: 2px solid red;
+.site-map {
+    min-height: 100vh;
     background-image: url("st4_images/sitemap_bg.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    overflow-x: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .map {
