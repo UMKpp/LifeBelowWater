@@ -289,3 +289,12 @@ section:last-child {
     text-decoration: none;
 }
 
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px 10px;
+    width: 100% !important;
+    margin: 0 !important;
+  }
+}

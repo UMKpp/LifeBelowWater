@@ -272,36 +272,67 @@ footer {
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+.menu-icon {
+  display: none;
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .navigation {
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
     padding: 10px;
   }
   .nav-logo {
-    margin-bottom: 10px;
+    margin-right: 10px;
   }
   .nav-title {
     font-size: 1.5em;
-    text-align: center;
-    margin-bottom: 10px;
+    flex-grow: 1;
+    text-align: left;
+  }
+  /* Hamburger menu icon */
+  .menu-icon {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+    color: #006064;
+    order: 3;
+    padding-left: 15px;
+  }
+  .profile-icon {
+    margin-left: auto;
+    margin-right: 0;
+    order: 2;
   }
   nav ul {
     flex-direction: column;
     gap: 10px;
     align-items: center;
     padding: 0;
-    margin: 0;
+    margin: 10px 0 0 0;
     width: 100%;
+    display: none; /* Hidden by default */
+    order: 4;
+  }
+  nav ul.active {
+    display: flex; /* Show when active */
   }
   nav a {
     display: block;
     width: 100%;
     text-align: center;
   }
-  .profile-icon {
-    margin: 15px auto 0 auto;
+  
+  /* Footer 2x2 grid */
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    text-align: left;
+  }
+  .footer-section {
+    min-width: 0;
+    margin: 0;
   }
   .footer-bottom {
     flex-direction: column;
