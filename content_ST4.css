@@ -292,18 +292,31 @@ section:last-child {
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
-  .container, .page-container, .flex-container {
+  .container, .page-container {
     padding: 20px 10px;
     width: 100% !important;
     margin: 0 !important;
-    flex-direction: column;
+  }
+  .flex-container, .flex-container.reversed {
+    flex-direction: column !important;
+    width: 100% !important;
+    padding: 0;
+    margin: 10px 0 !important;
   }
   .side-nav {
     flex: none;
     width: 100%;
     margin-bottom: 20px;
   }
-  .image-container, .text-content {
+  .image-container, .text-content, .image-container_2 {
     width: 100% !important;
+    flex: none !important;
+    max-width: 100% !important;
+    margin: 10px 0 !important;
+  }
+  .image-container img, .image-container_2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
   }
 }
