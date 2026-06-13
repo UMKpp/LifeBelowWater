@@ -28,16 +28,53 @@ main {
 }
 
 .map {
-
-    background-image: url(st4_images/sitemap_bg.jpg);
-    background-size: cover;
+    /* Solid wall background */
+    background: #0f2027; /* Fallback solid color */
+    background: linear-gradient(135deg, #203a43 0%, #0f2027 100%);
+    
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    box-shadow: 6px 6px 10px rgba(0, 0, 0, 1);
+    width: 90%;
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Wall Decorations */
+.map::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 250px;
+    height: 250px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.map::after {
+    content: '';
+    position: absolute;
+    bottom: -100px;
+    right: -50px;
+    width: 350px;
+    height: 350px;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+/* Ensure content sits above decorations */
+.map h2, 
+.map svg {
+    position: relative;
+    z-index: 1;
 }
 
 .map a:last-child {
