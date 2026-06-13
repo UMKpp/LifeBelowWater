@@ -7,8 +7,8 @@
 }
 
 body {
-    background-color: #ffffff;
-    color: #0b0617;
+    background-color: #041c32; /* Dark blue background matching global theme */
+    color: #e0e0e0;
     line-height: 1.6;
 }
 
@@ -22,12 +22,12 @@ body {
 .profile-header {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    background-color: #46a1d2;
-    color: rgb(15, 69, 93);
+    background-color: #064663; /* Darker blue header */
+    color: #ffffff;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .avatar-container {
@@ -41,7 +41,7 @@ body {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid hwb(190 6% 65%);
+    border: 4px solid #00b4d8; /* Teal accent */
 }
 
 .user-info {
@@ -51,18 +51,43 @@ body {
 .user-info h1 {
     font-size: 2.2rem;
     margin-bottom: 5px;
+    color: #ffffff;
 }
 
 .user-info h2 {
     font-size: 1.3rem;
     font-weight: normal;
     margin-bottom: 15px;
+    color: #ecf0f1;
 }
 
 .quote {
     font-style: italic;
     font-size: 1.1rem;
     margin-top: 10px;
+    color: #caf0f8;
+}
+
+.new-badge-section {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.badge {
+    background-color: #04293a;
+    color: #00b4d8;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    border: 1px solid #00b4d8;
+}
+
+.badge.gold {
+    color: #ffd700;
+    border-color: #ffd700;
 }
 
 .basic-info {
@@ -70,6 +95,7 @@ body {
     flex-direction: column;
     justify-content: center;
     font-size: 0.95rem;
+    color: #ecf0f1;
 }
 
 .basic-info p {
@@ -78,6 +104,7 @@ body {
 
 .basic-info span {
     font-weight: bold;
+    color: #00b4d8;
 }
 
 /* Content Layout */
@@ -88,24 +115,33 @@ body {
 }
 
 .profile-card {
-    background-color: rgb(109, 178, 224);
+    background-color: #04293a; /* Deep blue-grey */
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .profile-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
 
 .profile-card h3 {
-    color: #1450a3;
+    color: #00b4d8; /* Bright teal accent */
     margin-bottom: 15px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #212424;
+    border-bottom: 2px solid #064663;
+    display: flex;
+    align-items: center;
+}
+
+.card-icon {
+    width: 28px;
+    height: 28px;
+    fill: #00b4d8;
+    margin-right: 10px;
 }
 
 /* Skills Section */
@@ -116,14 +152,14 @@ body {
 .progress-bar {
     width: 100%;
     height: 10px;
-    background-color: #e0e0e0;
+    background-color: #064663;
     border-radius: 5px;
     overflow: hidden;
 }
 
 .progress {
     height: 100%;
-    background-color: #0077b6;
+    background-color: #00b4d8;
     border-radius: 5px;
 }
 
@@ -137,12 +173,14 @@ body {
     display: flex; /* Align icon and text in a row */
     align-items: left; /* Vertically center the icon and text */
     margin-bottom: 10px; /* Add spacing between items */
+    color: #e0e0e0;
 }
 
 .goals-section li img {
     width: 24px; /* Adjust icon size */
     height: 24px;
     margin-right: 10px; /* Space between icon and text */
+    filter: brightness(0) invert(1); /* Make icons white to match dark theme */
 }
 
 /* Frustrations */
@@ -155,13 +193,14 @@ body {
     position: relative;
     padding-left: 15px;
     margin-bottom: 10px;
+    color: #e0e0e0;
 }
 
 .frustrations-section li:before {
     content: "➤";
     position: absolute;
     left: -15px;
-    color: #00314b;
+    color: #00b4d8;
 }
 
 /* Experience Section */
@@ -169,6 +208,7 @@ body {
     list-style-type: disc;
     padding-left: 20px;
     margin-top: 10px;
+    color: #e0e0e0;
 }
 
 .legend {
@@ -187,9 +227,8 @@ body {
 /* Styling for the legend text */
 .legend-text {
     font-size: 16px;
-    color: #333;
+    color: #e0e0e0;
 }
-
 
 /* Calendar Styles */
 .calendar-container {
@@ -205,31 +244,33 @@ body {
 
 .calendar th,
 .calendar td {
-    border: 1px solid #ddd;
+    border: 1px solid #064663;
     padding: 8px;
     text-align: center;
 }
 
 .calendar th {
-    background-color: #0077b6;
+    background-color: #064663;
     color: white;
 }
 
 .calendar .available {
-    background-color: #72efdd;
+    background-color: #00b4d8;
     cursor: pointer;
+    color: #041c32;
+    font-weight: bold;
 }
 
 .date-cell {
     text-align: center;
     padding: 5px;
-    border: 1px solid #ddd;
+    border: 1px solid #064663;
     border-radius: 4px;
 }
 
 .available-date {
-    background-color: #72efdd;
-    color: #333;
+    background-color: #00b4d8;
+    color: #041c32;
     font-weight: bold;
 }
 
@@ -244,7 +285,7 @@ body {
     width: 60px;
     height: 60px;
     margin: 5px;
-    background-color: #f0f0f0;
+    background-color: #064663;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -254,6 +295,7 @@ body {
 
 .un-goal:hover {
     transform: scale(1.1);
+    background-color: #00b4d8;
 }
 
 .un-icon {
@@ -274,10 +316,12 @@ body {
 
 input,
 textarea {
-    resize:none;
+    resize: none;
     width: 100%;
     padding: 12px;
-    border: 1px solid #ddd;
+    border: 1px solid #064663;
+    background-color: #041c32;
+    color: white;
     border-radius: 5px;
     font-size: 1rem;
 }
@@ -285,42 +329,26 @@ textarea {
 input:focus,
 textarea:focus {
     outline: none;
-    border-color: #0077b6;
-    box-shadow: 0 0 3px rgba(0, 119, 182, 0.3);
+    border-color: #00b4d8;
+    box-shadow: 0 0 3px rgba(0, 180, 216, 0.5);
 }
 
 .send-button {
-    background-color: #0077b6;
-    color: white;
+    background-color: #00b4d8;
+    color: #041c32;
+    font-weight: bold;
     border: none;
     padding: 12px 25px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s;
     align-self: flex-end;
 }
 
 .send-button:hover {
-    background-color: #00507a;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #0077b6;
-    color: white;
-    margin-top: 30px;
-}
-
-footer a {
-    color: #caf0f8;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
+    background-color: #48cae4;
+    transform: scale(1.05);
 }
 
 /* Media Queries for Responsiveness */

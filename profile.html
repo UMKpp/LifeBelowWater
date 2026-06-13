@@ -46,7 +46,6 @@
                 <div class="new-badge-section">
                     <span class="badge">Oceanographer</span>
                     <span class="badge">National Geographic Explorer</span>
-                    <span class="badge gold">TED Prize 2009</span>
                     <span class="badge gold">Time Hero for the Planet</span>
                 </div>
             </div>
@@ -293,10 +292,10 @@
                         </svg>
                         Contact me
                     </h3>
-                    <form id="contact-form">
-                        <input type="text" placeholder="Name" required>
-                        <input type="email" placeholder="Email" required>
-                        <textarea rows="4" placeholder="Message" required></textarea>
+                    <form id="contact-form" action="mailto:jeona004@gmail.com" method="post" enctype="text/plain">
+                        <input type="text" name="Name" placeholder="Name" required>
+                        <input type="email" name="Email" placeholder="Email" required>
+                        <textarea name="Message" rows="4" placeholder="Message" required></textarea>
                         <button type="submit" class="send-button">Send message</button>
                     </form>
                 </section>
